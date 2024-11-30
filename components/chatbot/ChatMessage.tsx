@@ -2,9 +2,6 @@
 import React from 'react';
 import FormattedResponse from '../../components/chatbot/ChatBotResponse';
 import { useState } from "react";
-import 'prismjs/themes/prism-solarizedlight.css'; // Import a theme for syntax highlighting
-import "prismjs/components/prism-typescript"; // Import the language you need
-import 'prismjs';
 
 interface ChatMessageProps {
   role: string;

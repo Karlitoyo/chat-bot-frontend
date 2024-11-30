@@ -15,7 +15,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         messages: messages,
         model: 'gpt-4o', // Replace with the appropriate model
         temperature: 0.2,
-        max_tokens: 5000,
+        max_tokens: 7000,
       };
 
       // Perform the API request

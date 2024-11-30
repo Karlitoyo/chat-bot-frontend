@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "dotenv": "^16.4.5",
+    "lz-string": "^1.5.0",
     "next": "latest",
     "openai": "^4.73.0",
     "prismjs": "^1.29.0",

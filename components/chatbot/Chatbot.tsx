@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import * as dotenv from "dotenv";
 import ChatMessage from '../../components/chatbot/ChatMessage';
 import ChatInput from '../../components/chatbot/ChatInput';
-import FormattedResponse from '../../components/chatbot/ChatBotResponse';
+import { storageHelper } from "../../utils/storageHelper";
 
 dotenv.config();
 
@@ -17,18 +17,20 @@ export default function Chat() {
   const [isLoading, setIsLoading] = useState(false);
   const [rawResponse, setRawResponse] = useState("");
 
+  const STORAGE_KEY = "chatMessages";
+
   // Load messages from localStorage when the component mounts
   useEffect(() => {
-    const savedMessages = localStorage.getItem("chatMessages");
+    const savedMessages = storageHelper.loadFromStorage(STORAGE_KEY);
     if (savedMessages) {
-      setMessages(JSON.parse(savedMessages));
+      setMessages(savedMessages);
     }
   }, []);
 
   // Save messages to localStorage whenever they change
   useEffect(() => {
     if (messages.length > 0) {
-      localStorage.setItem("chatMessages", JSON.stringify(messages));
+      storageHelper.saveToStorage(STORAGE_KEY, messages);
     }
   }, [messages]);
 
