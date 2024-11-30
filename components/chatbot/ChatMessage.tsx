@@ -2,6 +2,9 @@
 import React from 'react';
 import FormattedResponse from '../../components/chatbot/ChatBotResponse';
 import { useState } from "react";
+import 'prismjs/themes/prism-solarizedlight.css'; // Import a theme for syntax highlighting
+import "prismjs/components/prism-typescript"; // Import the language you need
+import 'prismjs';
 
 interface ChatMessageProps {
   role: string;
@@ -18,7 +21,7 @@ const ChatMessage: React.FC<ChatMessageProps> = ({ role, content, timestamp }) =
   return (
     <div
       className={`p-4 rounded-xl shadow-md ${
-        role === "user" ? "bg-blue-500 text-white" : "bg-gray-100 text-gray-900"
+        role === "user" ? "bg-blue-500 text-white" : "bg-base-200 text-teal-200"
       }`}
     >
       <div className="flex justify-between items-center">
