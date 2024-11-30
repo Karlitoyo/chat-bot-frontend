@@ -90,7 +90,7 @@ export default function Chat() {
           )}
 
           {/* Render formatted response directly in the main component */}
-          {!isLoading && <FormattedResponse rawResponse={rawResponse} />}
+          {/* {!isLoading && <FormattedResponse rawResponse={rawResponse} />} */}
         </div>
 
         {/* Input Section */}

@@ -5,6 +5,12 @@ import 'prismjs/components/prism-typescript'; // Import the language you need
 
 interface FormattedResponseProps {
   rawResponse: string; // Prop to pass the raw response to be formatted
+
+  role: string;
+
+  content: string;
+
+  timestamp?: string;
 }
 
 const FormattedResponse: React.FC<FormattedResponseProps> = ({ rawResponse }) => {
