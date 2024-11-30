@@ -14,7 +14,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       const params: OpenAI.Chat.ChatCompletionCreateParams = {
         messages: messages,
         model: 'gpt-4o', // Replace with the appropriate model
-        temperature: 0.2,
+        temperature: 0,
         max_tokens: 7000,
       };
 
