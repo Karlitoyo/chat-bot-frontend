@@ -1,8 +1,8 @@
 // pages/chat.tsx
 import { useState, useEffect } from "react";
 import * as dotenv from "dotenv";
-import ChatMessage from '../../components/chatbot/ChatMessage';
-import ChatInput from '../../components/chatbot/ChatInput';
+import ChatMessage from './ChatMessage';
+import ChatInput from './ChatInput';
 import { storageHelper } from "../../utils/storageHelper";
 
 dotenv.config();

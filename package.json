@@ -14,7 +14,8 @@
     "prismjs": "^1.29.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "readline-sync": "^1.4.10"
+    "readline-sync": "^1.4.10",
+    "shiki": "^2.3.2"
   },
   "devDependencies": {
     "@types/node": "^12.12.21",

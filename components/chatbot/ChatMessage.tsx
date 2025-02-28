@@ -1,6 +1,6 @@
 // components/chatbot/ChatMessage.tsx
 import React from 'react';
-import FormattedResponse from '../../components/chatbot/ChatBotResponse';
+import FormattedResponse from './ChatBotResponse';
 import { useState } from "react";
 
 interface ChatMessageProps {
